@@ -1,0 +1,37 @@
+.wrapAddMessage {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.input {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+.input::placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #d5d7dc;
+}
+.wrapButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapButton button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.wrapButton button:hover {
+  box-shadow: 0px 0px 15px rgba(153, 163, 174, 0.259256);
+  border-radius: 7px;
+}
+.wrapButton button:not(:last-child) {
+  margin-right: 10px;
+}
