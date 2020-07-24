@@ -9,4 +9,43 @@
     border-radius: 0;
     border: none;
   }
+
+  & .oneUser {
+    display: flex;
+    position: relative;
+  }
+
+  & .oneUser img {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  & .wrapInfo {
+    padding-left: 60px;
+  }
+  & .wrapDescription {
+    display: flex;
+  }
+  & .wrapDescription svg {
+    margin-right: 10px;
+  }
+  & .userInfo {
+    color: #9ba0ad;
+    font-size: 14px;
+  }
+  & .userName {
+    color: black;
+    font-size: 16px;
+  }
+
+  & .dateTime {
+    font-size: 10px;
+    color: #9ba0ad;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
