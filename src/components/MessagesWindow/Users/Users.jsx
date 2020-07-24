@@ -15,7 +15,7 @@ const Users = ({ users }) => {
           return "";
         } else {
           return (
-            <ListGroup.Item className={css.usersLi}>
+            <ListGroup.Item key={u.id} className={css.usersLi}>
               <Figure className={css.oneUser}>
                 <Figure.Image
                   width={50}
