@@ -16,29 +16,7 @@ export default [
     online: true,
     voice: true,
 
-    messages: [
-      {
-        message: "To take a trivial example? which of us ever undertakes)",
-        imgUserMessage: "",
-        time: "01:38",
-      },
-      {
-        message:
-          "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures ",
-        imgUserMessage: user4,
-        time: "01:14",
-      },
-      {
-        message: "Which is the same as saying?",
-        imgUserMessage: "",
-        time: "01:38",
-      },
-      {
-        message: "On the other hand, we denounce with righteous indignation! ",
-        imgUserMessage: user4,
-        time: "01:14",
-      },
-    ],
+    messages: [],
   },
   {
     id: "2",
@@ -68,7 +46,29 @@ export default [
     dateTime: "9:15",
     online: true,
     voice: true,
-    messages: [],
+    messages: [
+      {
+        message: "To take a trivial example? which of us ever undertakes)",
+        imgUserMessage: "",
+        time: "01:38",
+      },
+      {
+        message: "On the other hand, we denounce with righteous indignation! ",
+        imgUserMessage: user4,
+        time: "01:14",
+      },
+      {
+        message: "Which is the same as saying?",
+        imgUserMessage: "",
+        time: "01:38",
+      },
+      {
+        message:
+          "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures ",
+        imgUserMessage: user4,
+        time: "01:14",
+      },
+    ],
   },
   {
     id: "5",

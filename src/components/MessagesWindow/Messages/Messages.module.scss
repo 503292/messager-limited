@@ -1,0 +1,31 @@
+@import "../../../assets/styles/variables.scss";
+
+.wrapMessages {
+  margin-bottom: 50px;
+  overflow: auto;
+}
+.dateTitle {
+}
+.descrMessage {
+  display: flex;
+  flex-direction: column;
+}
+.oneMessage {
+  background-color: message_grey;
+  color: #222428;
+  list-style: none;
+}
+.left {
+}
+.right {
+  text-align: end;
+}
+
+.message {
+  font-size: 14px;
+  line-height: 20px;
+}
+.time {
+  font-size: 12px;
+  color: #9ba0ad;
+}

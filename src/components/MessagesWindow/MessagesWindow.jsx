@@ -14,12 +14,8 @@ const MessagesWindow = ({ users }) => {
       <Users users={users} />
       <div className={css.wrapMessages}>
         <Search />
-        <Messages />
+        <Messages users={users} />
         <AddMessage />
-
-        {/* <div >f</div>
-        <div className={css.messages}>df</div>
-        <div className={css.addMessage}>sdfg</div> */}
       </div>
     </div>
   );
