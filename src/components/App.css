@@ -1,8 +1,10 @@
 .app {
+  height: 100vh;
   display: flex;
+  position: relative;
+  padding-top: 60px;
 }
 .main {
-  position: relative;
 }
 /* .App-logo {
   height: 40vmin;

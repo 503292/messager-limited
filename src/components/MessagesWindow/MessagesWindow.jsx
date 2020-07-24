@@ -1,9 +1,9 @@
 import React from "react";
 
-// import css from "MessagesWindow.module.scss";
+import css from "./MessagesWindow.module.scss";
 
 const MessagesWindow = () => {
-  return <div>MessagesWindow</div>;
+  return <div className={css.wrapMessagesWindow}>MessagesWindow</div>;
 };
 
 export default MessagesWindow;

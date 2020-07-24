@@ -1,9 +1,9 @@
 import React from "react";
 
-// import css from "./LeftBar.module.scss";
+import css from "./LeftBar.module.scss";
 
 const LeftBar = () => {
-  return <div>LeftBar</div>;
+  return <div className={css.wrapLeftBar}>LeftBar</div>;
 };
 
 export default LeftBar;

@@ -1,5 +1,5 @@
-@import './normalize.css';
-@import '../fonts/fonts.css';
+@import "./normalize.css";
+@import "../fonts/fonts.css";
 
 html {
   box-sizing: border-box;
@@ -9,8 +9,6 @@ html {
   box-sizing: border-box;
   width: 100vw;
   overflow: hidden;
-  background-color: rgba(251, 251, 160, 0.8);
-  background-color: rgba(255, 255, 125, 0.8);
 }
 *,
 *::before,
@@ -20,8 +18,8 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   transition: color 150ms ease-out, background-color 150ms ease-out;
   min-width: 320px;
   height: 100vh;
