@@ -5,18 +5,21 @@ import LeftBar from "./LeftBar/LeftBar";
 import MessagesWindow from "./MessagesWindow/MessagesWindow";
 
 import "../assets/styles/style.css";
-import "./App.css";
+import "./App.scss";
+
+import users from "../users";
 
 function App() {
+  console.log(users, "users");
   return (
     <div className="app">
       <header>
-        <Header />
+        <Header users={users} />
       </header>
-      <main>
-        <LeftBar className="main" />
+      <main className="main">
+        <LeftBar />
 
-        <MessagesWindow />
+        <MessagesWindow users={users} />
       </main>
     </div>
   );

@@ -8,7 +8,7 @@
   padding: 0 40px 0 120px;
   background-color: $white;
   display: flex;
-  border-bottom: 1px solid #DAE4F2;
+  border-bottom: 1px solid #dae4f2;
 
   & .breadCrumbs {
     display: flex;
@@ -41,10 +41,6 @@
 
     & img {
       height: 22px;
-    }
-    & figcaption {
-    }
-    & svg {
     }
   }
 

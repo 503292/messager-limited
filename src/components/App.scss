@@ -1,3 +1,5 @@
+@import "../assets/styles/variables.scss";
+
 .app {
   height: 100vh;
   display: flex;
@@ -5,6 +7,8 @@
   padding-top: 60px;
 }
 .main {
+  padding: 40px 40px 40px 120px;
+  background-color: $bg_grey;
 }
 /* .App-logo {
   height: 40vmin;
