@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Breadcrumb } from "react-bootstrap";
+import { ReactComponent as Arrow } from "../../assets/img/arror-right.svg";
 
 import css from "./Header.module.scss";
 
@@ -8,9 +9,14 @@ const Header = () => {
   return (
     <div className={css.wrapHeader}>
       {/* <div className={css.breadCrumbs}> */}
-      <Breadcrumb className={css.breadCrumbs}>
-        <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Network</Breadcrumb.Item>
+      <Breadcrumb target="c" className={css.breadCrumbs}>
+        <Breadcrumb.Item bsPrefix="" href="/home">
+          Home
+        </Breadcrumb.Item>
+        <div className={css.arrow}>
+          <Arrow />
+        </div>
+        <Breadcrumb.Item href="/network">Network</Breadcrumb.Item>
       </Breadcrumb>
       {/* <p>Home</p> */}
       {/* <img alt="arrow-right" />

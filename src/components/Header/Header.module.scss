@@ -1,16 +1,32 @@
+@import "../../assets/styles/variables.scss";
+
 .wrapHeader {
   position: absolute;
   width: 100vw;
   height: 60px;
   top: 0;
-  padding: 0 0 0 80px; // тимчасово
-
-  background-color: #ffffff;
+  padding: 0 0 0 80px;
+  background-color: $white;
   display: flex;
 
   & .breadCrumbs {
-    background-color: rgb(233, 162, 162);
+    display: flex;
+    align-items: center;
     flex: 1;
+
+    & .arrow {
+      padding: 0 10px;
+    }
+    & ol li a {
+      color: $dark;
+    }
+    & ol {
+      border-radius: 0;
+      border: none;
+      margin: 0;
+      background-color: transparent;
+      // height: 100%;
+    }
   }
   & .userInfo {
     background-color: rgb(153, 175, 125);
