@@ -1,0 +1,29 @@
+.wrapSearch {
+  height: 40px;
+  border-bottom: 1px solid #f5f6f9;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  padding: 0 15px;
+  margin-right: 1px;
+}
+.btn:hover {
+  background-color: grey;
+}
+.btn:active {
+  background-color: rgb(168, 167, 167);
+}
+.input {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+.input::placeholder {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #d5d7dc;
+}

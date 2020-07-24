@@ -64,7 +64,7 @@ export default [
     id: "4",
     imgUrl: user4,
     userName: "Stacey Dosh",
-    userInfo: "Ut enim ad minima ve",
+    userInfo: "Ut enim ad minima veniam…",
     dateTime: "9:15",
     online: true,
     voice: true,

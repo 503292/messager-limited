@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Users from "./Users/Users";
+import Search from "./Search/Search";
+import Messages from "./Messages/Messages";
+import AddMessage from "./AddMessage/AddMessage";
 
 import css from "./MessagesWindow.module.scss";
 
@@ -9,7 +12,15 @@ const MessagesWindow = ({ users }) => {
   return (
     <div className={css.wrapMessagesWindow}>
       <Users users={users} />
-      <div className={css.wrapMessages}>wrapMessages</div>
+      <div className={css.wrapMessages}>
+        <Search />
+        <Messages />
+        <AddMessage />
+
+        {/* <div >f</div>
+        <div className={css.messages}>df</div>
+        <div className={css.addMessage}>sdfg</div> */}
+      </div>
     </div>
   );
 };
