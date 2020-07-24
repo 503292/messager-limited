@@ -11,13 +11,15 @@
   flex-direction: column;
 }
 .oneMessage {
-  background-color: message_grey;
+  background-color: $message_grey;
   color: #222428;
   list-style: none;
 }
 .left {
+  position: relative;
 }
 .right {
+  position: relative;
   text-align: end;
 }
 

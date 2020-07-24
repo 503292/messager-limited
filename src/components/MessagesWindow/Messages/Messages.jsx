@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { ReactComponent as LeftTriagel } from "../../../assets/img/left-msg.svg";
+import { ReactComponent as RightTriagel } from "../../../assets/img/right-msg.svg";
+
 import css from "./Messages.module.scss";
 
 const Messages = ({ users }) => {
@@ -16,15 +19,24 @@ const Messages = ({ users }) => {
             {m.imgUserMessage && <img src={m.imgUserMessage} alt="user foto" />}
 
             {m.imgUserMessage ? (
-              <div className={css.left}>
-                <p>{m.message}</p>
-                <p>{m.time}</p>
-              </div>
+              <>
+                <LeftTriagel />
+                <div className={css.left}>
+                  <p>{m.message}</p>
+                  <p>{m.time}</p>
+                </div>
+
+                {/* <div className={css.leftInvisible}></div> */}
+              </>
             ) : (
-              <div className={css.right}>
-                <p>{m.message}</p>
-                <p>{m.time}</p>
-              </div>
+              <>
+                {/* <div className={css.rightInvisible}></div> */}
+                <div className={css.right}>
+                  <p>{m.message}</p>
+                  <p>{m.time}</p>
+                  <RightTriagel />
+                </div>
+              </>
             )}
           </li>
         ))}
