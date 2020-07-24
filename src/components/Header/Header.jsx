@@ -1,7 +1,9 @@
 import React from "react";
 
-import { Breadcrumb } from "react-bootstrap";
-import { ReactComponent as Arrow } from "../../assets/img/arror-right.svg";
+import { Breadcrumb, Figure } from "react-bootstrap";
+import { ReactComponent as ArrowR } from "../../assets/img/arrow-right.svg";
+import { ReactComponent as ArrowB } from "../../assets/img/arrow-bottom.svg";
+import userImg from "../../assets/img/users/user1.png";
 
 import css from "./Header.module.scss";
 
@@ -14,19 +16,20 @@ const Header = () => {
           Home
         </Breadcrumb.Item>
         <div className={css.arrow}>
-          <Arrow />
+          <ArrowR />
         </div>
         <Breadcrumb.Item href="/network">Network</Breadcrumb.Item>
       </Breadcrumb>
-      {/* <p>Home</p> */}
-      {/* <img alt="arrow-right" />
-        <p>Network</p> */}
-      {/* </div> */}
-      <div className={css.userInfo}>
-        <img alt="foto user" />
+      {/* <div className={css.userInfo}> */}
+      <Figure className={css.userInfo}>
+        <Figure.Image width={22} height={22} alt="171x180" src={userImg} />
+        <Figure.Caption>Sarah Freeman</Figure.Caption>
+        <ArrowB />
+      </Figure>
+      {/* <img alt="foto user" />
         <p>Sarah Freman</p>
-        <img alt="arrow bottom" />
-      </div>
+        <img alt="arrow bottom" /> */}
+      {/* </div> */}
     </div>
   );
 };
