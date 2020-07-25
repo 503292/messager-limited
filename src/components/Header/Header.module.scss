@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables.scss";
+
+.wrapHeader {
+  position: absolute;
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  padding: 0 40px 0 120px;
+  background-color: $white;
+  display: flex;
+  border-bottom: 1px solid #dae4f2;
+
+  & .breadCrumbs {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    & .arrow {
+      padding: 0 10px;
+    }
+    & ol li a {
+      color: $dark;
+    }
+    & ol {
+      border-radius: 0;
+      border: none;
+      margin: 0;
+      background-color: transparent;
+    }
+  }
+  & .userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 0;
+
+    & * {
+      margin: 0 10px 0 0;
+    }
+
+    & img {
+      height: 22px;
+    }
+  }
+
+  & div p {
+    margin: 0;
+  }
+}

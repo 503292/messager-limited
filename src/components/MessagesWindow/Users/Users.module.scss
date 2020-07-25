@@ -1,0 +1,67 @@
+@import "../../../assets/styles/variables.scss";
+
+.usersUl {
+  border-right: 1px solid #edf0f4;
+
+  & .usersLi {
+    height: 90px;
+    width: 300px;
+    border-radius: 0;
+    border: none;
+
+    &:hover,
+    :focus {
+      box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2),
+        0px -5px 5px rgba(224, 224, 224, 0.15);
+      z-index: 1;
+    }
+  }
+  & .ischecked {
+    background-color: $message_grey;
+  }
+
+  & .oneUser {
+    display: flex;
+    position: relative;
+  }
+
+  & .oneUser img {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  & .wrapInfo {
+    padding-left: 60px;
+  }
+  & .wrapDescription {
+    display: flex;
+
+    & p {
+      margin: 0;
+    }
+  }
+  & .wrapDescription svg {
+    margin-right: 10px;
+  }
+  & .userInfo {
+    color: #9ba0ad;
+    font-size: 14px;
+  }
+  & .userName {
+    color: black;
+    font-size: 16px;
+    font-family: "Exo 2";
+    font-weight: 500;
+  }
+
+  & .dateTime {
+    font-size: 10px;
+    color: #9ba0ad;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

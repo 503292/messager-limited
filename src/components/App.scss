@@ -1,0 +1,13 @@
+@import "../assets/styles/variables.scss";
+
+.app {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  padding-top: 60px;
+}
+.main {
+  padding: 40px 40px 40px 120px;
+  background-color: $bg_grey;
+  width: 100%;
+}
