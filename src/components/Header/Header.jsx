@@ -11,13 +11,13 @@ const Header = () => {
   return (
     <div className={css.wrapHeader}>
       <Breadcrumb target="c" className={css.breadCrumbs}>
-        <Breadcrumb.Item bsPrefix="" href="/home">
+        <Breadcrumb.Item bsPrefix="" href="/">
           Home
         </Breadcrumb.Item>
         <div className={css.arrow}>
           <ArrowR />
         </div>
-        <Breadcrumb.Item href="/network">Network</Breadcrumb.Item>
+        <Breadcrumb.Item href="/">Network</Breadcrumb.Item>
       </Breadcrumb>
       <Figure className={css.userInfo}>
         <Figure.Image width={22} height={22} alt="171x180" src={userImg} />
