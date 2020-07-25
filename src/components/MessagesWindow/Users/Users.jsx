@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import { ListGroup, Figure } from "react-bootstrap";
@@ -8,6 +8,23 @@ import { ReactComponent as Voice } from "../../../assets/img/request.svg";
 import css from "./Users.module.scss";
 
 const Users = ({ users }) => {
+  const [id, setId] = useState([]);
+
+  const handleClick = (val) => {
+    if (id.includes(val)) {
+      const tnpIds = id.filter((el) => el !== val);
+      setId(tnpIds);
+      return;
+    }
+    setId([...id, val]);
+  };
+
+  const checkedUser = (val) => {
+    return id.includes(val);
+  };
+
+  console.log(id, "id");
+
   return (
     <ListGroup className={css.usersUl}>
       {users.map((u) => {
@@ -15,7 +32,15 @@ const Users = ({ users }) => {
           return "";
         } else {
           return (
-            <ListGroup.Item key={u.id} className={css.usersLi}>
+            <ListGroup.Item
+              onClick={() => handleClick(u.id)}
+              key={u.id}
+              className={
+                checkedUser(u.id)
+                  ? `${css.usersLi} ${css.ischecked} `
+                  : ` ${css.usersLi}`
+              }
+            >
               <Figure className={css.oneUser}>
                 <Figure.Image
                   width={50}
