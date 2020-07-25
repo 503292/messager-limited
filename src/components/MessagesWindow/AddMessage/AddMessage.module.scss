@@ -36,3 +36,7 @@
 .wrapButton button:not(:last-child) {
   margin-right: 10px;
 }
+
+.wrapButton button:focus {
+  outline: none;
+}
