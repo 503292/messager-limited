@@ -8,4 +8,53 @@
   top: 0;
   left: 0;
   width: 80px;
+  padding-top: 23px;
+}
+.wrapLogo {
+  width: 35px;
+  height: 35px;
+  margin: 0 auto 44px auto;
+}
+
+// Navbar
+
+.navbar {
+}
+.wrapList {
+  padding: 0;
+}
+.route {
+  list-style: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.route a {
+  height: 48px;
+  width: 80px;
+  border-left: 4px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counterMsg {
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-color: #2a74db;
+}
+.counterMsg p {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
 }
