@@ -16,25 +16,23 @@ const Messages = ({ users }) => {
       <ul className={css.descrMessage}>
         {userMessages.map((m, index) => (
           <li className={css.oneMessage} key={index}>
-            {m.imgUserMessage && <img src={m.imgUserMessage} alt="user foto" />}
+            {/* {m.imgUserMessage &&} */}
 
             {m.imgUserMessage ? (
               <>
-                <LeftTriagel />
+                <img src={m.imgUserMessage} alt="user foto" />
                 <div className={css.left}>
+                  <LeftTriagel className={css.leftTriangel}/>
                   <p>{m.message}</p>
                   <p>{m.time}</p>
                 </div>
-
-                {/* <div className={css.leftInvisible}></div> */}
               </>
             ) : (
               <>
-                {/* <div className={css.rightInvisible}></div> */}
                 <div className={css.right}>
                   <p>{m.message}</p>
                   <p>{m.time}</p>
-                  <RightTriagel />
+                  <RightTriagel className={css.rightTriangel}/>
                 </div>
               </>
             )}

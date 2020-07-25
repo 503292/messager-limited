@@ -48,11 +48,6 @@ export default [
     voice: true,
     messages: [
       {
-        message: "To take a trivial example? which of us ever undertakes)",
-        imgUserMessage: "",
-        time: "01:38",
-      },
-      {
         message: "On the other hand, we denounce with righteous indignation! ",
         imgUserMessage: user4,
         time: "01:14",
@@ -67,6 +62,11 @@ export default [
           "But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures ",
         imgUserMessage: user4,
         time: "01:14",
+      },
+      {
+        message: "To take a trivial example? which of us ever undertakes)",
+        imgUserMessage: "",
+        time: "01:38",
       },
     ],
   },

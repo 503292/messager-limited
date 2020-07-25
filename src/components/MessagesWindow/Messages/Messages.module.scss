@@ -5,22 +5,51 @@
   overflow: auto;
 }
 .dateTitle {
+  font-family: Exo 2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #caced9;
+  text-align: center;
 }
 .descrMessage {
   display: flex;
   flex-direction: column;
 }
 .oneMessage {
-  background-color: $message_grey;
   color: #222428;
   list-style: none;
+  display: flex;
+  margin: 0 0 10px 0;
+
+  & img {
+    height: 36px;
+    margin-right: 10px;
+    align-self: flex-end;
+  }
 }
+
 .left {
+  display: flex;
   position: relative;
+  background-color: $message_grey;
+  border-radius: 5px;
+  padding: 15px 10px;
 }
 .right {
   position: relative;
-  text-align: end;
+  display: flex;
+  background-color: $message_grey;
+  margin: 0 30px 0 auto;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+
+.left p,
+.right p {
+  margin: 0;
 }
 
 .message {
@@ -30,4 +59,15 @@
 .time {
   font-size: 12px;
   color: #9ba0ad;
+}
+
+.leftTriangel {
+  position: absolute;
+  bottom: -1px;
+  left: -15px;
+}
+.rightTriangel {
+  position: absolute;
+  bottom: -1px;
+  right: -15px;
 }
