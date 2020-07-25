@@ -21,18 +21,18 @@ const Messages = ({ users }) => {
             {m.imgUserMessage ? (
               <>
                 <img src={m.imgUserMessage} alt="user foto" />
-                <div className={css.left}>
-                  <LeftTriagel className={css.leftTriangel}/>
+                <div className={`${css.left} ${css.msg}`}>
+                  <LeftTriagel className={css.leftTriangel} />
                   <p>{m.message}</p>
-                  <p>{m.time}</p>
+                  <p className={css.time}>{m.time}</p>
                 </div>
               </>
             ) : (
               <>
-                <div className={css.right}>
+                <div className={`${css.right} ${css.msg}`}>
                   <p>{m.message}</p>
-                  <p>{m.time}</p>
-                  <RightTriagel className={css.rightTriangel}/>
+                  <p className={css.time}>{m.time}</p>
+                  <RightTriagel className={css.rightTriangel} />
                 </div>
               </>
             )}
